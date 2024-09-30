@@ -56,16 +56,16 @@
             this.button24 = new System.Windows.Forms.Button();
             this.button25 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
-            this.ımageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.ımageList1 = new System.Windows.Forms.ImageList(this.components);
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -306,28 +306,6 @@
             this.groupBox1.TabIndex = 25;
             this.groupBox1.TabStop = false;
             // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.linkLabel1);
-            this.groupBox2.Controls.Add(this.richTextBox2);
-            this.groupBox2.Location = new System.Drawing.Point(525, 152);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(498, 103);
-            this.groupBox2.TabIndex = 25;
-            this.groupBox2.TabStop = false;
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.label4);
-            this.groupBox3.Controls.Add(this.label2);
-            this.groupBox3.Controls.Add(this.label3);
-            this.groupBox3.Controls.Add(this.label1);
-            this.groupBox3.Location = new System.Drawing.Point(525, 261);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(498, 84);
-            this.groupBox3.TabIndex = 25;
-            this.groupBox3.TabStop = false;
-            // 
             // richTextBox1
             // 
             this.richTextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -337,20 +315,15 @@
             this.richTextBox1.TabIndex = 0;
             this.richTextBox1.Text = "";
             // 
-            // richTextBox2
+            // groupBox2
             // 
-            this.richTextBox2.Location = new System.Drawing.Point(6, 29);
-            this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(486, 41);
-            this.richTextBox2.TabIndex = 0;
-            this.richTextBox2.Text = "";
-            this.richTextBox2.KeyDown += new System.Windows.Forms.KeyEventHandler(this.richTextBox2_KeyDown);
-            // 
-            // ımageList1
-            // 
-            this.ımageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ımageList1.ImageStream")));
-            this.ımageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.ımageList1.Images.SetKeyName(0, "passaparola.png");
+            this.groupBox2.Controls.Add(this.linkLabel1);
+            this.groupBox2.Controls.Add(this.richTextBox2);
+            this.groupBox2.Location = new System.Drawing.Point(525, 152);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(498, 103);
+            this.groupBox2.TabIndex = 25;
+            this.groupBox2.TabStop = false;
             // 
             // linkLabel1
             // 
@@ -366,14 +339,35 @@
             this.linkLabel1.Text = "Sonraki";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
-            // label1
+            // richTextBox2
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(27, 36);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(76, 25);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Doğru :";
+            this.richTextBox2.Location = new System.Drawing.Point(6, 29);
+            this.richTextBox2.Name = "richTextBox2";
+            this.richTextBox2.Size = new System.Drawing.Size(486, 41);
+            this.richTextBox2.TabIndex = 0;
+            this.richTextBox2.Text = "";
+            this.richTextBox2.KeyDown += new System.Windows.Forms.KeyEventHandler(this.richTextBox2_KeyDown);
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.label4);
+            this.groupBox3.Controls.Add(this.label2);
+            this.groupBox3.Controls.Add(this.label3);
+            this.groupBox3.Controls.Add(this.label1);
+            this.groupBox3.Location = new System.Drawing.Point(525, 261);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(498, 84);
+            this.groupBox3.TabIndex = 25;
+            this.groupBox3.TabStop = false;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(289, 36);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(23, 25);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "0";
             // 
             // label2
             // 
@@ -393,14 +387,20 @@
             this.label3.TabIndex = 0;
             this.label3.Text = "Yanlış :";
             // 
-            // label4
+            // label1
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(289, 36);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(23, 25);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "0";
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(27, 36);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(76, 25);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Doğru :";
+            // 
+            // ımageList1
+            // 
+            this.ımageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ımageList1.ImageStream")));
+            this.ımageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.ımageList1.Images.SetKeyName(0, "passaparola.png");
             // 
             // Form1
             // 
@@ -442,6 +442,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form1";
             this.Text = "PASAPAROLA";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
